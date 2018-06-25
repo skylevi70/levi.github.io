@@ -1,0 +1,124 @@
+/* CSS Document */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#intrologo { 
+vertical-align: 50%;
+	top: 40%;
+}
+
+#section1 {
+
+    /* Full height */
+    height: 724px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+    background-image: url(../images/introbackground.jpg)
+}
+
+.copyright {
+	background-color: #242424;
+	align-content: center;
+	height: 20%;
+	text-align: center;
+}
+
+
+
+
+.footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.navbar {
+	opacity: .93;    
+	background: -webkit-linear-gradient(#212121, #424242);
+	background: -o-linear-gradient(#212121, #424242);
+	background: linear-gradient(#212121, #424242); 
+	box-shadow: 3px 3px 50px black;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+}
+
+.whenhoovernav:hover{ 
+	background-color: dodgerblue;
+	
+
+}
+
+
+
+.title {
+    color: white
+}
+
+.btn-round {
+    border-radius: 30px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text {
+    float: left;
+}
+.introduction {
+    color: white;
+    margin-top: 7%;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.line-1{
+     
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+	color: white; 
+	font-size: 50px; 
+	font-family: 'Quicksand', sans-serif; 
+	margin-top: 80px;
+	box-sizing: content-box;
+}
+.anim-typewriter{
+  animation: typewriter 2.5s steps(44) 1s 1 normal both,
+             blinkTextCursor 1000ms steps(5) infinite normal;
+}
+
+
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 14em;} 
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+
